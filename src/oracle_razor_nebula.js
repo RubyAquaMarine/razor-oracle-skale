@@ -1,6 +1,6 @@
 const ethers = require('ethers');
-const config = require('./setConfig.json');
-const credentials = require('./keys.json');
+const config = require('../setConfig.json');
+const credentials = require('../keys.json');
 const chalk = require('chalk');
 //--------------------------------------ADJUST-----------------------------------||
 const providerOrigin = new ethers.providers.JsonRpcProvider(config.rpc.schain_Nebula); // SKALE CHAIN, works with schain_Nebula, schain_Calypso, staging_europa
@@ -69,7 +69,7 @@ async function RazorOracle() {
 
 async function run() {
     const razor_price = await RazorOracle();
-    console.log(chalk.blue(`${ASSET}`, razor_price));
+    console.log(chalk.blue(`${ASSET}`), chalk.yellow(razor_price), chalk.green(providerOrigin.connection.url));
 }
 
-run();
+module.exports.run = run;

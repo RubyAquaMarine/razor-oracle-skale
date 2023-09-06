@@ -2,9 +2,9 @@
   "name": "razor-oracle-skale",
   "version": "1.0.0",
   "description": "",
-  "main": "bot.js",
+  "main": "index.js",
   "scripts": {
-    "price": "node oracle_razor.js"
+    "price": "node index.js"
   },
   "author": "",
   "license": "ISC",
