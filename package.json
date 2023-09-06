@@ -1,0 +1,15 @@
+{
+  "name": "razor-oracle-skale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "price": "node oracle_razor.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^5.5.0",
+    "chalk": "^4.1.1"
+  }
+}
