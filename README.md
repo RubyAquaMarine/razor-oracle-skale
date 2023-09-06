@@ -14,3 +14,7 @@ make keys.json
 npm install
 npm run price
 ```
+
+## datafeeds 
+- [razorscan](https://razorscan.io/governance/datafeeds)
+- [available networks](https://docs.razor.network/docs/consume-data-feeds/deployment-details)
